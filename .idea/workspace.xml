@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="04200d84-4a55-44ea-96f0-fef29c0bccc8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/GenbankAsAFunction/src/com/example/GenbankAsAFunction/GenbankToPolynucleotide.java" beforeDir="false" afterPath="$PROJECT_DIR$/GenbankAsAFunction/src/com/example/GenbankAsAFunction/GenbankToPolynucleotide.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GenbankAsAFunction/src/com/example/GenbankAsAFunction/PolynucleotideToGenbank.java" beforeDir="false" afterPath="$PROJECT_DIR$/GenbankAsAFunction/src/com/example/GenbankAsAFunction/PolynucleotideToGenbank.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -14,14 +15,27 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1s8Zllwz0UxpU410m3Q5371M17r" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/GenbankAsAFunction/src" />
+    </key>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -35,5 +49,15 @@
       <updated>1620256329370</updated>
     </task>
     <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="208" y="25" width="1024" height="798" key="SettingsEditor" timestamp="1620262125684">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="208" y="25" width="1024" height="798" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1620262125684" />
+    <state x="434" y="322" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1620262099696">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="434" y="322" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1440.900@0.0.1440.900" timestamp="1620262099696" />
   </component>
 </project>
