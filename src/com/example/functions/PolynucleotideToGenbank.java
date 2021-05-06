@@ -52,10 +52,31 @@ public class PolynucleotideToGenbank {
 
     }
 
+    public static void writeFile() {
+        File dnaFile = new File("src/test/resources/NM_000266.gb");
+        LinkedHashMap<String, DNASequence> dnaSequences =
+                GenbankReaderHelper.readGenbankDNASequence( dnaFile );
+        ByteArrayOutputStream fragwriter = new ByteArrayOutputStream();
+        ArrayList<DNASequence> seqs = new ArrayList<DNASequence>();
+        for(DNASequence seq : dnaSequences.values()) {
+            seqs.add(seq);
+        }
+
+// ok now we got some DNA sequence data. Next step is to write it
+
+        GenbankWriterHelper.writeNucleotideSequence(fragwriter, seqs,
+                GenbankWriterHelper.LINEAR_DNA);
+
+// the fragwriter object now contains a string representation in the Genbank format
+// and you could write this into a file
+// or print it out on the console
+        System.out.println(fragwriter.toString());
+    }
+
     /** Takes the input polynucleotideFile (assigned in readFile()) and converts
      *  it to a Genbank file. */
-    public static void convert() {
-
+    public static void convert(String inputFilePath) {
+        readFile(inputFilePath);
     }
 
 }
