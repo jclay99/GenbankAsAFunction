@@ -1,0 +1,146 @@
+LOCUS       sequence__9_            1395 bp    DNA        linear       08-APR-2021
+DEFINITION  Bacillus cereus strain FDAARGOS_798 chromosome, complete genome.
+ACCESSION   CP053954 REGION: 2505042..2506436
+VERSION     CP053954.1
+DBLINK      BioProject: PRJNA231221 BioSample: SAMN11056513
+KEYWORDS    .
+SOURCE      Bacillus cereus
+  ORGANISM  Bacillus cereus Bacteria; Firmicutes; Bacilli; Bacillales;
+            Bacillaceae; Bacillus; Bacillus cereus group.
+REFERENCE   1  (bases 1 to 1395)
+  AUTHORS   Nelson,B., Plummer,A., Tallon,L., Sadzewicz,L., Zhao,X.,
+            Vavikolanu,K., Mehta,A., Aluvathingal,J., Nadendla,S., Myers,T.,
+            Yan,Y. and Sichtig,H.
+  TITLE     FDA dAtabase for Regulatory Grade micrObial Sequences (FDA-ARGOS):
+            Supporting development and validation of Infectious Disease Dx
+            tests
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 1395)
+  AUTHORS   Nelson,B., Plummer,A., Tallon,L., Sadzewicz,L., Zhao,X.,
+            Vavikolanu,K., Mehta,A., Aluvathingal,J., Nadendla,S., Myers,T.,
+            Yan,Y. and Sichtig,H.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (26-MAY-2020) Center for Devices and Radiological Health,
+            US Food and Drug Administration, 10903 New Hampshire Avenue, Silver
+            Spring, MD 20993-0002, USA
+COMMENT     The annotation was added by the NCBI Prokaryotic Genome Annotation
+            Pipeline (PGAP). Information about PGAP can be found here:
+            https://www.ncbi.nlm.nih.gov/genome/annotation_prok/
+            ##Genome-Assembly-Data-START## Assembly Method       :: SMRT v.
+            2.3.0, HGAP v. 3 Genome Coverage       :: 935.51x Sequencing
+            Technology :: Pacbio; Illumina ##Genome-Assembly-Data-END##
+            ##Genome-Annotation-Data-START## Annotation Provider
+            :: NCBI Annotation Date                   :: 05/28/2020 20:36:02
+            Annotation Pipeline               :: NCBI Prokaryotic Genome
+            Annotation Pipeline (PGAP) Annotation Method                 ::
+            Best-placed reference protein
+            set; GeneMarkS-2+ Annotation Software revision      :: 4.11
+            Features Annotated                :: Gene; CDS; rRNA; tRNA; ncRNA;
+            repeat_region Genes (total)                     :: 6,168 CDSs
+            (total)                      :: 6,015 Genes (coding)
+            :: 5,823 CDSs (with protein)               :: 5,823 Genes (RNA)
+            :: 153 rRNAs                             :: 14, 14, 14 (5S, 16S,
+            23S) complete rRNAs                    :: 14, 14, 14 (5S, 16S, 23S)
+            tRNAs                             :: 106 ncRNAs
+            :: 5 Pseudo Genes (total)              :: 192 CDSs (without
+            protein)            :: 192 Pseudo Genes (ambiguous residues) :: 0
+            of 192 Pseudo Genes (frameshifted)       :: 92 of 192 Pseudo Genes
+            (incomplete)         :: 103 of 192 Pseudo Genes (internal stop)
+            :: 57 of 192 Pseudo Genes (multiple problems)  :: 53 of 192
+            ##Genome-Annotation-Data-END##
+COMMENT     
+COMMENT     ApEinfo:methylated:1
+FEATURES             Location/Qualifiers
+     source          1..1395
+                     /organism="Bacillus cereus"
+                     /mol_type="genomic DNA"
+                     /strain="FDAARGOS_798"
+                     /culture_collection="FDA:FDAARGOS_798"
+                     /db_xref="taxon:1396"
+                     /country="USA: MD"
+                     /collected_by="Tetracore"
+                     /locus_tag="source:Bacillus cereus"
+                     /label="source:Bacillus cereus"
+                     /ApEinfo_label="source:Bacillus cereus"
+                     /ApEinfo_fwdcolor="pink"
+                     /ApEinfo_revcolor="pink"
+                     /ApEinfo_graphicformat="arrow_data {{0 0.5 0 1 2 0 0 -1 0
+                     -0.5} {} 0} width 5 offset 0"
+     gene            1..1395
+                     /gene="pabB"
+                     /locus_tag="FOC92_16140"
+                     /label="FOC92_16140"
+                     /ApEinfo_label="FOC92_16140"
+                     /ApEinfo_fwdcolor="#ff797d"
+                     /ApEinfo_revcolor="#ff102f"
+                     /ApEinfo_graphicformat="arrow_data {{0 0.5 0 1 2 0 0 -1 0
+                     -0.5} {} 0} width 5 offset 0"
+     CDS             1..1395
+                     /gene="pabB"
+                     /EC_number="2.6.1.85"
+                     /inference="COORDINATES: similar to AA
+                     sequence:RefSeq:WP_001189677.1"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Protein Homology."
+                     /codon_start=1
+                     /transl_table=11
+                     /product="aminodeoxychorismate synthase component I"
+                     /protein_id="QKH13421.1"
+                     /translation="MQRRKSLALSIPYQLDFFKQYKFLSQGKSQHILLESGRGGRYNI
+                     VGLNPVAVIRGKDETLHISESGKETIKRGNPLDLMQEYMEQWKTDYNPEYPPFQGGAI
+                     GYFSYDCIRYIEKLPSLAEDDINIPDIFFLLFDDVFVYDQKEQVLWVITHYVDKYEEA
+                     KERLNEWKSLWMTEAPEVTVPFESPEKKSEAVAFTEASFMKAVECIQEYIGAGDVFQV
+                     NLSTRQERTLQTHPLEIYTSLREINPSPYMGYLELGDFQIVSGSPELLIKKQGTEVST
+                     RPIAGTRSRGADEQEDEELARELIENEKERAEHVMLVDLERNDLGRVCKYGTVEVDEF
+                     MVIEKYSHVMHIVSNVRGEVEEDKDAFDLVKAVFPGGTITGAPKIRTMEIIEELEPVR
+                     RGIYTGSIGWIGYSGDTELNIVIRTLLAKDGKAHVQAGAGIVIDSNPENEYKESLKKA
+                     IALWRAKERSEETVR"
+                     /locus_tag="FOC92_16140(1)"
+                     /label="FOC92_16140(1)"
+                     /ApEinfo_label="FOC92_16140"
+                     /ApEinfo_fwdcolor="#e9d024"
+                     /ApEinfo_revcolor="#e9d024"
+                     /ApEinfo_graphicformat="arrow_data {{0 0.5 0 1 2 0 0 -1 0
+                     -0.5} {} 0} width 5 offset 0"
+     misc_feature    850..855
+                     /locus_tag="XbaI"
+                     /label="XbaI"
+                     /ApEinfo_label="XbaI"
+                     /ApEinfo_fwdcolor="#00ffff"
+                     /ApEinfo_revcolor="#00ffff"
+                     /ApEinfo_graphicformat="arrow_data {{0 0.5 0 1 2 0 0 -1 0
+                     -0.5} {} 0} width 5 offset 0"
+     misc_feature    847..852
+                     /locus_tag="BglII"
+                     /label="BglII"
+                     /ApEinfo_label="BglII"
+                     /ApEinfo_fwdcolor="#00ff80"
+                     /ApEinfo_revcolor="#00ff80"
+                     /ApEinfo_graphicformat="arrow_data {{0 0.5 0 1 2 0 0 -1 0
+                     -0.5} {} 0} width 5 offset 0"
+ORIGIN
+        1 atgcaacgaa gaaaatcttt agcgctttct attccatatc agttagattt ctttaagcaa
+       61 tataaatttc tttctcaggg taaatcgcaa catattttgt tagaaagcgg ccgtggcggt
+      121 cgttataaca ttgtagggct gaacccagta gcggtaatcc gagggaagga tgaaacgtta
+      181 catataagtg aaagtggtaa ggaaacaata aaacgaggga atccgttaga tttaatgcaa
+      241 gaatatatgg aacaatggaa gacggactat aacccagagt atccgccttt tcaaggtggt
+      301 gcaattggct atttcagtta tgactgtatc cgttatattg aaaagctgcc ttctcttgcg
+      361 gaagatgata ttaatatacc tgacatcttc tttttattat ttgatgacgt atttgtctat
+      421 gatcaaaaag aacaagtgtt atgggttatt acgcattatg tagataaata tgaagaggca
+      481 aaagaacggc taaatgagtg gaagagtctt tggatgacag aagcgcctga agtgactgtg
+      541 ccctttgaaa gtcctgaaaa gaaaagtgaa gcagttgctt ttactgaagc cagctttatg
+      601 aaggcagttg aatgtattca agaatatatt ggggcgggtg atgtgttcca agtaaacttg
+      661 tcgacgagac aagaaagaac gttacagaca cacccactag aaatttatac aagtcttcgt
+      721 gaaattaatc catctccata tatgggttac ctggagcttg gggattttca aattgttagt
+      781 ggatcgccag agttgttaat taagaaacaa ggaactgaag taagtacaag accaattgct
+      841 ggaacgagat ctagaggcgc ggatgagcaa gaggatgaag aattagcaag agaattaatt
+      901 gagaacgaaa aagaaagagc agagcatgta atgcttgtgg atttagaaag aaatgattta
+      961 ggacgtgttt gtaaatatgg cactgtagaa gtagatgaat ttatggtaat tgagaaatac
+     1021 tcacatgtta tgcatattgt ttctaatgtg cgtggtgagg tggaagaaga taaagatgct
+     1081 tttgatttag tgaaggctgt attccctggg ggaacaatta ctggtgcccc gaaaatacgt
+     1141 acgatggaaa ttattgagga attagaacct gttcgaagag ggatttatac aggttcaatc
+     1201 ggttggattg gttattctgg agatacagaa ttgaatattg taattagaac acttcttgct
+     1261 aaagatggaa aagctcatgt acaagcaggg gcgggaattg taattgattc aaatccagaa
+     1321 aatgaatata aagagtcgtt aaaaaaggcg attgctttat ggcgtgcaaa agaacgtagc
+     1381 gaagaaacgg ttagg    
+//
