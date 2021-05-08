@@ -1,31 +1,30 @@
 package com.example.functions;
 
-import java.io.File;
-import java.util.LinkedHashMap;
+import java.io.ByteArrayOutputStream;
+import java.util.ArrayList;
+import java.util.*;
 
 import org.biojava.nbio.structure.Model;
 import org.biojava.nbio.core.sequence.DNASequence;
-import org.biojava.nbio.core.sequence.io.GenbankReaderHelper;
-import org.biojava.nbio.core.sequence.ProteinSequence;
+import org.biojava.nbio.core.sequence.io.GenbankWriterHelper;
+import org.biojava.nbio.structure.Chain;
+import org.biojava.nbio.structure.Group;
+import org.biojava.nbio.structure.Atom;
+import org.biojava.nbio.core.exceptions.CompoundNotFoundException;
 
 /** This class reads Polynucleotide objects, or models describing linear,
  *  circular, double stranded, and single stranded DNA sequences, and converts
  *  them to annotated Genbank files. The Model class is imported from the
- *  biojava library, an open source library for DNA sequencing. */
+ *  biojava library, an open source library for DNA sequencing.
+ *
+ *  CREDITS: the online library biojava was used heavily in the implementation of
+ *  this project. The GitHub tutorial repository biojava-tutorial (found at
+ *  https://github.com/biojava/biojava-tutorial) was used to understand how to read
+ *  and write Genbank files with biojava, as well as how to use the various classes. */
 
 public class PolynucleotideToGenbank {
 
-    /** Instantiates the PolynucleotideFile variable; this variable is assigned
-     *  in readFile(). */
-    private static Model polynucleotideFile;
-
     public static void main(String[] args) {
-
-    }
-
-    /** Assigns the input file path (as a String) to the polynucleotideFile
-     *  variable. This variable can be converted to Genbank in convert(). */
-    public static void openFile(String filePath) {
 
     }
 
@@ -33,50 +32,51 @@ public class PolynucleotideToGenbank {
      *
      *  NOTE: this method should never have to be called. It is called for you
      *  in convert(). */
-    public static void readFile(String filePath) {
-
-        File dnaFile = new File("src/test/resources/NM_000266.gb");
-        File protFile = new File("src/test/resources/BondFeature.gb");
-
-        LinkedHashMap<String, DNASequence> dnaSequences =
-                GenbankReaderHelper.readGenbankDNASequence( dnaFile );
-        for (DNASequence sequence : dnaSequences.values()) {
-            System.out.println(sequence.getSequenceAsString());
+    public static List<DNASequence> readFile(Model polynucleotideFile) throws CompoundNotFoundException {
+        List<Chain> chainList = polynucleotideFile.getChains();
+        List<String> stringList = new List<String>();
+        for (Chain chain : chainList) {
+            List<Group> groupList = chain.getAtomGroups();
+            for (Group group : groupList) {
+                List<Atom> atomList = group.getAtoms();
+                String atomString = "";
+                for (Atom atom : atomList) {
+                    String atomName = atom.getName();
+                    atomString = atomString + atomName;
+                }
+                stringList.add(atomString);
+            }
         }
-
-        LinkedHashMap<String, ProteinSequence> protSequences =
-                GenbankReaderHelper.readGenbankProteinSequence(protFile);
-        for (ProteinSequence sequence : protSequences.values()) {
-            System.out.println(sequence.getSequenceAsString());
+        List<DNASequence> dnaSequences = new List<DNASequence>();
+        for (String string : stringList) {
+            DNASequence insertSequence = new DNASequence(string);
+            dnaSequences.add(insertSequence);
         }
-
+        return dnaSequences;
     }
 
-    public static void writeFile() {
-        File dnaFile = new File("src/test/resources/NM_000266.gb");
-        LinkedHashMap<String, DNASequence> dnaSequences =
-                GenbankReaderHelper.readGenbankDNASequence( dnaFile );
+    /** Writes the given DNA sequences to a Genbank text string.
+     *
+     *  NOTE: this method should never have to be called. It is called for you
+     *  in convert(). */
+    public static String writeFile(List<DNASequence> inputSequences) throws Exception {
         ByteArrayOutputStream fragwriter = new ByteArrayOutputStream();
-        ArrayList<DNASequence> seqs = new ArrayList<DNASequence>();
-        for(DNASequence seq : dnaSequences.values()) {
-            seqs.add(seq);
+        ArrayList<DNASequence> dnaSequences = new ArrayList<DNASequence>();
+        for(DNASequence seq : inputSequences) {
+            dnaSequences.add(seq);
         }
 
-// ok now we got some DNA sequence data. Next step is to write it
-
-        GenbankWriterHelper.writeNucleotideSequence(fragwriter, seqs,
+        GenbankWriterHelper.writeNucleotideSequence(fragwriter, dnaSequences,
                 GenbankWriterHelper.LINEAR_DNA);
 
-// the fragwriter object now contains a string representation in the Genbank format
-// and you could write this into a file
-// or print it out on the console
-        System.out.println(fragwriter.toString());
+        return fragwriter.toString();
     }
 
     /** Takes the input polynucleotideFile (assigned in readFile()) and converts
-     *  it to a Genbank file. */
-    public static void convert(String inputFilePath) {
-        readFile(inputFilePath);
+     *  it to a Genbank text string. */
+    public static String convert(Model inputPolynucleotide) throws Exception {
+        List<DNASequence> dnaSequences = readFile(inputPolynucleotide);
+        return writeFile(dnaSequences);
     }
 
 }
