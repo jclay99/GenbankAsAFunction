@@ -60,16 +60,16 @@ public class PolynucleotideToGenbank {
      *  NOTE: this method should never have to be called. It is called for you
      *  in convert(). */
     public static String writeFile(List<DNASequence> inputSequences) throws Exception {
-        ByteArrayOutputStream fragwriter = new ByteArrayOutputStream();
+        ByteArrayOutputStream writer = new ByteArrayOutputStream();
         ArrayList<DNASequence> dnaSequences = new ArrayList<DNASequence>();
         for(DNASequence seq : inputSequences) {
             dnaSequences.add(seq);
         }
 
-        GenbankWriterHelper.writeNucleotideSequence(fragwriter, dnaSequences,
+        GenbankWriterHelper.writeNucleotideSequence(writer, dnaSequences,
                 GenbankWriterHelper.LINEAR_DNA);
 
-        return fragwriter.toString();
+        return writer.toString();
     }
 
     /** Takes the input polynucleotideFile (assigned in readFile()) and converts

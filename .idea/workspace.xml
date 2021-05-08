@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="04200d84-4a55-44ea-96f0-fef29c0bccc8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/example/functions/GenbankToPolynucleotide.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/functions/GenbankToPolynucleotide.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/example/functions/PolynucleotideToGenbank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/functions/PolynucleotideToGenbank.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -64,6 +63,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="434" y="322" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1440.900@0.0.1440.900" timestamp="1620262099696" />
+    <state x="378" y="61" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1620444795618">
+      <screen x="0" y="25" width="1440" height="798" />
+    </state>
+    <state x="378" y="61" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.25.1440.798@0.25.1440.798" timestamp="1620444795618" />
     <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1620438923973">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
